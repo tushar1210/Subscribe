@@ -18,4 +18,6 @@ struct CardModel{
     let cardProviderImage:Dictionary<String,String> = ["MasterCard":"MasterCardLogo","Visa":"VisaLogo","AmericanExpress":"AmericanExpressLogo","RuPay":"RuPayLogo"]
     var date:String?
     var cardNumber:String?
+    var colors:[UIColor]?
+    var frame:CGRect = CGRect(x: 0, y: 0, width: 200, height: 100)
 }
