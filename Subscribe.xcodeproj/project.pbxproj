@@ -18,6 +18,10 @@
 		784CC1B6250D5DF000A243DA /* SubscribeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC1B5250D5DF000A243DA /* SubscribeTests.swift */; };
 		784CC1C1250D5DF000A243DA /* SubscribeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC1C0250D5DF000A243DA /* SubscribeUITests.swift */; };
 		78D82D2B250FCDC4004DE501 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D2A250FCDC4004DE501 /* CardView.swift */; };
+		78D82D2E251127FD004DE501 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */; };
+		78D82D302511280A004DE501 /* andale-mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D2F2511280A004DE501 /* andale-mono.ttf */; };
+		78D82D3625113A0D004DE501 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3525113A0D004DE501 /* CardViewController.swift */; };
+		78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3925113BBC004DE501 /* CardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		784CC1C0250D5DF000A243DA /* SubscribeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeUITests.swift; sourceTree = "<group>"; };
 		784CC1C2250D5DF000A243DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78D82D2A250FCDC4004DE501 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		78D82D2F2511280A004DE501 /* andale-mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "andale-mono.ttf"; sourceTree = "<group>"; };
+		78D82D3525113A0D004DE501 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = Subscribe/Controller/CardViewController.swift; sourceTree = SOURCE_ROOT; };
+		78D82D3925113BBC004DE501 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,7 @@
 		7849A050250D618D00025EFD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				78D82D3925113BBC004DE501 /* CardTableViewCell.swift */,
 				78D82D2A250FCDC4004DE501 /* CardView.swift */,
 			);
 			path = View;
@@ -101,6 +110,7 @@
 		7849A051250D619900025EFD /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				78D82D3525113A0D004DE501 /* CardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +138,7 @@
 		784CC19A250D5DED00A243DA /* Subscribe */ = {
 			isa = PBXGroup;
 			children = (
+				78D82D2C251126DE004DE501 /* Fonts */,
 				7849A051250D619900025EFD /* Controller */,
 				7849A050250D618D00025EFD /* View */,
 				7849A04F250D618200025EFD /* Model */,
@@ -159,6 +170,15 @@
 				784CC1C2250D5DF000A243DA /* Info.plist */,
 			);
 			path = SubscribeUITests;
+			sourceTree = "<group>";
+		};
+		78D82D2C251126DE004DE501 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */,
+				78D82D2F2511280A004DE501 /* andale-mono.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				784CC1AB250D5DF000A243DA /* LaunchScreen.storyboard in Resources */,
+				78D82D302511280A004DE501 /* andale-mono.ttf in Resources */,
 				784CC1A8250D5DF000A243DA /* Assets.xcassets in Resources */,
 				784CC1A3250D5DED00A243DA /* Main.storyboard in Resources */,
+				78D82D2E251127FD004DE501 /* Raleway-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,11 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				784CC1A6250D5DED00A243DA /* Subscribe.xcdatamodeld in Sources */,
+				78D82D3625113A0D004DE501 /* CardViewController.swift in Sources */,
 				784CC1A0250D5DED00A243DA /* ViewController.swift in Sources */,
 				7849A053250D636000025EFD /* CardModel.swift in Sources */,
 				784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */,
 				78D82D2B250FCDC4004DE501 /* CardView.swift in Sources */,
 				784CC19E250D5DED00A243DA /* SceneDelegate.swift in Sources */,
+				78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
