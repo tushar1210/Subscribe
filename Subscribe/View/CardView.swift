@@ -39,6 +39,7 @@ class CardView:UIView{
         self.setUpView()
         self.layer.cornerRadius = 10
         self.addSublayouts()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -68,41 +69,70 @@ class CardView:UIView{
         logoImageView.contentMode = .scaleAspectFit
         addSubview(logoImageView)
         
-        typeLabel.frame = CGRect(x: frame.midX-27, y: 30, width: 57, height: 20)
+        typeLabel.frame = CGRect(x: frame.midX-35, y: 30, width: 70, height: 20)
         typeLabel.center = CGPoint(x: frame.midX, y: 30)
         typeLabel.text = "DEBIT"
         typeLabel.textAlignment = .center
+        typeLabel.font = UIFont(name: "AndaleMono", size: 18)
+        typeLabel.adjustsFontSizeToFitWidth = true
         addSubview(typeLabel)
         
         cardNumberLabel.frame = CGRect(x: frame.midX-145 , y: 83, width: 290, height: 25)
         cardNumberLabel.center = CGPoint(x: frame.midX, y: 83)
-        cardNumberLabel.text = "XXXX  XXXX  XXXX XXXX"
+        cardNumberLabel.text = "XXXX  XXXX  XXXX  XXXX"
         cardNumberLabel.textAlignment = .center
+        cardNumberLabel.font = UIFont(name: "AndaleMono", size: 22)
+        cardNumberLabel.adjustsFontSizeToFitWidth = true
         addSubview(cardNumberLabel)
         
         dateLabel.frame = CGRect(x: frame.minX + 15, y: frame.maxY-29, width: 45, height: 17)
         dateLabel.text = "MM/YY"
         dateLabel.textAlignment = .center
+        dateLabel.font = UIFont(name: "AndaleMono", size: 15)
+        dateLabel.adjustsFontSizeToFitWidth = true
         addSubview(dateLabel)
         
         nameLabel.frame = CGRect(x: dateLabel.frame.maxX, y: frame.maxY-29, width: cardNumberLabel.frame.width-dateLabel.frame.width, height: 17)
         nameLabel.text = "Card Holder"
         nameLabel.textAlignment = .right
+        nameLabel.font = UIFont(name: "AndaleMono", size: 15)
+        nameLabel.adjustsFontSizeToFitWidth = true
         addSubview(nameLabel)
         
         
     }
-    
+
     public func setLogo(logo: cardProviderImageEnum){
         logoImageView.image = UIImage(named: logo.rawValue)
-        print(logo.rawValue)
     }
+    
     public func setType(type:CardTypeEnum){
         typeLabel.text = type.rawValue
     }
-
     
-    
-    
+    public func setCardNumber(number:String){
+        var formattedString = String()
+        var ctr=0
+        for i in number{
+            if(ctr==4){
+                formattedString += "  "
+                ctr=0
+            }
+            formattedString.append(i)
+            ctr+=1
+        }
+        if(number.count<16){
+            let diff=16-number.count-1
+            for _ in 0...diff{
+                if(ctr==4){
+                    formattedString += "  "
+                    ctr=0
+                }
+                formattedString.append("X")
+                ctr+=1
+            }
+        }
+        cardNumberLabel.text = formattedString
+    }
     
 }

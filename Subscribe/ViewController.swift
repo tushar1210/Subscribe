@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         card.setLogo(logo: .masterCard)
+        card.setCardNumber(number:"123431")
         view.insertSubview(card, at: 0)
     }
     
