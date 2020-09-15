@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var card = CardView(colors: [.black,.blue], frame: CGRect(x: 50, y: 140, width: 200, height: 100))
+
+    
+    var card = CardView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.insertSubview(card.frontView, at: 1)
-        
+        view.insertSubview(card, at: 0)
     }
+    
 
 
 }

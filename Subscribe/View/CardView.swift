@@ -11,22 +11,35 @@ import UIKit
 
 class CardView:UIView{
     
-    var frontView = UIView()
     var cardModel = CardModel()
+    var logoImageView = UIImageView()
+    var typeTextField = UITextField()
+    var cardNumberTextField = UITextField()
+    var dateTextField = UITextField()
+    var nameTextField = UITextField()
     
-    init(colors:[UIColor], frame:CGRect) {
+    
+    
+    init(colors:[UIColor] = [UIColor.orange,UIColor.red], frame:CGRect = CGRect(x: 0, y: 0, width: 323, height: 170)) {
         super.init(frame:frame)
         self.cardModel.colors = colors
-        self.frontView.frame = frame
+        self.frame = frame
         self.cardModel.frame = frame
         self.generateGradient()
+        self.setUpView()
+        self.layer.cornerRadius = 10
+       
     }
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        print(123)
     }
+    
+    
     func generateGradient(){
         let gradient = CAGradientLayer()
-        gradient.frame = frontView.bounds
+        gradient.frame = bounds
         var cgColors:[CGColor] = []
         for color:UIColor in cardModel.colors!{
             cgColors.append(color.cgColor)
@@ -34,17 +47,12 @@ class CardView:UIView{
         gradient.colors = cgColors
         gradient.startPoint = CGPoint.zero
         gradient.endPoint = CGPoint(x: 1, y: 1)
-        frontView.layer.insertSublayer(gradient, at: 0)
-        
+        layer.insertSublayer(gradient, at: 0)
     }
-    
-    
-    
-    
-    
-    
-    
-    
+    func setUpView(){
+        layer.cornerRadius = 10
+        clipsToBounds = true
+    }
     
     
     
