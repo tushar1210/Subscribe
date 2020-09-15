@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.com/tushar1210/Subscribe.svg?token=27Z2zscKSk4Es1NqjPSe&branch=master)](https://travis-ci.com/tushar1210/Subscribe)
