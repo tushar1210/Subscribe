@@ -58,9 +58,14 @@ class CardView:UIView{
         gradient.endPoint = CGPoint(x: 1, y: 1)
         layer.insertSublayer(gradient, at: 0)
     }
+    
     private func setUpView(){
         layer.cornerRadius = 10
         clipsToBounds = true
+        typeLabel.textColor = .white
+        cardNumberLabel.textColor = .white
+        dateLabel.textColor = .white
+        nameLabel.textColor = .white
     }
     
     private func addSublayouts(){
@@ -71,7 +76,7 @@ class CardView:UIView{
         
         typeLabel.frame = CGRect(x: frame.midX-35, y: 30, width: 70, height: 20)
         typeLabel.center = CGPoint(x: frame.midX, y: 30)
-        typeLabel.text = "DEBIT"
+        typeLabel.attributedText = NSAttributedString(string: "DEBIT", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
         typeLabel.textAlignment = .center
         typeLabel.font = UIFont(name: "AndaleMono", size: 18)
         typeLabel.adjustsFontSizeToFitWidth = true
@@ -107,7 +112,7 @@ class CardView:UIView{
     }
     
     public func setType(type:CardTypeEnum){
-        typeLabel.text = type.rawValue
+        typeLabel.attributedText = NSAttributedString(string: type.rawValue, attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
     }
     
     public func setCardNumber(number:String){
