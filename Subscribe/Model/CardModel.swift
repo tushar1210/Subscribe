@@ -15,7 +15,15 @@ struct CardModel{
         case debit = "DEBIT"
         case credit = "CREDIT"
     }
-    let cardProviderImage:Dictionary<String,String> = ["MasterCard":"MasterCardLogo","Visa":"VisaLogo","AmericanExpress":"AmericanExpressLogo","RuPay":"RuPayLogo"]
+    
+    enum cardProviderImageEnum:String {
+        case masterCard = "MasterCard"
+        case visa = "VisaLogo"
+        case amex = "AmericanExpressLogo"
+        case rupay = "RuPayLogo"
+    }
+    
+    var cardImage:cardProviderImageEnum?
     var date:String?
     var cardNumber:String?
     var colors:[UIColor]?
