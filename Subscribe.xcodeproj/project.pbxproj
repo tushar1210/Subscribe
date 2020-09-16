@@ -24,6 +24,7 @@
 		78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3925113BBC004DE501 /* CardTableViewCell.swift */; };
 		78D82D3C2512ABE9004DE501 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */; };
 		78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */; };
+		78D82D402512B964004DE501 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3F2512B964004DE501 /* SubscriptionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		78D82D3925113BBC004DE501 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
 		78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
+		78D82D3F2512B964004DE501 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7849A052250D636000025EFD /* CardModel.swift */,
+				78D82D3F2512B964004DE501 /* SubscriptionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */,
 				78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */,
 				78D82D2B250FCDC4004DE501 /* CardView.swift in Sources */,
+				78D82D402512B964004DE501 /* SubscriptionModel.swift in Sources */,
 				784CC19E250D5DED00A243DA /* SceneDelegate.swift in Sources */,
 				78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */,
 				78D82D3C2512ABE9004DE501 /* SubscriptionsViewController.swift in Sources */,
