@@ -10,7 +10,6 @@
 		7849A053250D636000025EFD /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7849A052250D636000025EFD /* CardModel.swift */; };
 		784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC19B250D5DED00A243DA /* AppDelegate.swift */; };
 		784CC19E250D5DED00A243DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC19D250D5DED00A243DA /* SceneDelegate.swift */; };
-		784CC1A0250D5DED00A243DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC19F250D5DED00A243DA /* ViewController.swift */; };
 		784CC1A3250D5DED00A243DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784CC1A1250D5DED00A243DA /* Main.storyboard */; };
 		784CC1A6250D5DED00A243DA /* Subscribe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 784CC1A4250D5DED00A243DA /* Subscribe.xcdatamodeld */; };
 		784CC1A8250D5DF000A243DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784CC1A7250D5DF000A243DA /* Assets.xcassets */; };
@@ -50,7 +49,6 @@
 		784CC198250D5DED00A243DA /* Subscribe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Subscribe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784CC19B250D5DED00A243DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784CC19D250D5DED00A243DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		784CC19F250D5DED00A243DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		784CC1A2250D5DED00A243DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		784CC1A5250D5DED00A243DA /* Subscribe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Subscribe.xcdatamodel; sourceTree = "<group>"; };
 		784CC1A7250D5DF000A243DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				7849A04F250D618200025EFD /* Model */,
 				784CC19B250D5DED00A243DA /* AppDelegate.swift */,
 				784CC19D250D5DED00A243DA /* SceneDelegate.swift */,
-				784CC19F250D5DED00A243DA /* ViewController.swift */,
 				784CC1A1250D5DED00A243DA /* Main.storyboard */,
 				784CC1A7250D5DF000A243DA /* Assets.xcassets */,
 				784CC1A9250D5DF000A243DA /* LaunchScreen.storyboard */,
@@ -328,7 +325,6 @@
 			files = (
 				784CC1A6250D5DED00A243DA /* Subscribe.xcdatamodeld in Sources */,
 				78D82D3625113A0D004DE501 /* CardViewController.swift in Sources */,
-				784CC1A0250D5DED00A243DA /* ViewController.swift in Sources */,
 				7849A053250D636000025EFD /* CardModel.swift in Sources */,
 				784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */,
 				78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */,
