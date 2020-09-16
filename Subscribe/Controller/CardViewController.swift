@@ -27,7 +27,6 @@ class CardViewController: UIViewController {
 
 extension CardViewController: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(cardsArray.count)
         return cardsArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,7 +40,8 @@ extension CardViewController: UITableViewDelegate,UITableViewDataSource{
         return true
     }
    
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle,
+        forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete) {
             cardsArray.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)

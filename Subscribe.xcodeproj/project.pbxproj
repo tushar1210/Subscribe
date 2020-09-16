@@ -22,6 +22,8 @@
 		78D82D302511280A004DE501 /* andale-mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D2F2511280A004DE501 /* andale-mono.ttf */; };
 		78D82D3625113A0D004DE501 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3525113A0D004DE501 /* CardViewController.swift */; };
 		78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3925113BBC004DE501 /* CardTableViewCell.swift */; };
+		78D82D3C2512ABE9004DE501 /* SubscriptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */; };
+		78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		78D82D2F2511280A004DE501 /* andale-mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "andale-mono.ttf"; sourceTree = "<group>"; };
 		78D82D3525113A0D004DE501 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = Subscribe/Controller/CardViewController.swift; sourceTree = SOURCE_ROOT; };
 		78D82D3925113BBC004DE501 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsViewController.swift; sourceTree = "<group>"; };
+		78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				78D82D3525113A0D004DE501 /* CardViewController.swift */,
+				78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */,
+				78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -319,9 +325,11 @@
 				784CC1A0250D5DED00A243DA /* ViewController.swift in Sources */,
 				7849A053250D636000025EFD /* CardModel.swift in Sources */,
 				784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */,
+				78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */,
 				78D82D2B250FCDC4004DE501 /* CardView.swift in Sources */,
 				784CC19E250D5DED00A243DA /* SceneDelegate.swift in Sources */,
 				78D82D3A25113BBC004DE501 /* CardTableViewCell.swift in Sources */,
+				78D82D3C2512ABE9004DE501 /* SubscriptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

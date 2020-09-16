@@ -108,7 +108,7 @@ class CardView:UIView{
     }
 
     public func setLogo(logo: cardProviderImageEnum){
-        logoImageView.image = UIImage(named: logo.rawValue)
+        logoImageView.image = UIImage(named: "home")
     }
     
     public func setType(type:CardTypeEnum){
