@@ -18,11 +18,16 @@ class CardViewController: UIViewController {
         cardTableView.delegate = self
         cardTableView.dataSource = self
         cardTableView.separatorStyle = .none
-        cardTableView.allowsSelection = false
         cardsArray.append(CardView())
         cardsArray.append(CardView())
     }
-
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        performSegue(withIdentifier: "transcribe", sender: self)
+    }
+    @IBAction func unwindToParent(segue:UIStoryboardSegue) {
+        
+    }
+    
 }
 
 extension CardViewController: UITableViewDelegate,UITableViewDataSource{
@@ -31,6 +36,8 @@ extension CardViewController: UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = cardTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CardTableViewCell
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        cell.card.addGestureRecognizer(tap)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -47,5 +54,6 @@ extension CardViewController: UITableViewDelegate,UITableViewDataSource{
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }
+    
     
 }
