@@ -11,13 +11,14 @@ import Foundation
 struct SubscriptionModel {
     var name:String?
     var nextDate:Date?
-    var imageName:subscriptionImage?
+    var imageName:subscriptionImage? = .noImage
     var price:String?
-    enum subscriptionImage {
-        case spotify
-        case netflix
-        case appleMusic
-        case iCloud
-        case hotstar
+    enum subscriptionImage:String {
+        case spotify = "spotify-logo"
+        case netflix = "netflix-logo"
+        case appleMusic = "apple-music-logo"
+        case iCloud = "icloud-logo"
+        case hotstar = "hotstar-logo"
+        case noImage = "default-logo"
     }
 }
