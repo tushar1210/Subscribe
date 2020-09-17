@@ -20,7 +20,6 @@ class SubscriptionsViewController: UIViewController {
         subTableView.separatorStyle = .none
         subTableView.allowsSelection = false
         subTableView.backgroundColor = .clear
-        
     }
     
 }
@@ -31,23 +30,23 @@ extension SubscriptionsViewController:UITableViewDelegate, UITableViewDataSource
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return subs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = subTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SubscriptionTableViewCell
+        cell.nameLabel.text = subs[indexPath.section].name
+        cell.priceLabel.text = subs[indexPath.section].price
+        let df = DateFormatter()
+        df.dateFormat = "dd-MM-yyyy"
+        let now = df.string(from: Date())
+        cell.dateLabel.text = now
+        cell.logoImage.image = UIImage(named: subs[indexPath.section].imageName!.rawValue)
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
-    }
-    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let footer = UIView(frame: CGRect(x: 0, y: 0, width: 340, height: 30))
-        return footer
-    }
-    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
-        return 2
+        return 135
     }
         
 }

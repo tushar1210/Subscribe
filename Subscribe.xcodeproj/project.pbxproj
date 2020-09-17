@@ -25,6 +25,9 @@
 		78D82D3E2512AD6C004DE501 /* AddSubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */; };
 		78D82D402512B964004DE501 /* SubscriptionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D3F2512B964004DE501 /* SubscriptionModel.swift */; };
 		78D82D422512C28E004DE501 /* SubscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D412512C28E004DE501 /* SubscriptionTableViewCell.swift */; };
+		78D82D44251374BC004DE501 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D43251374BC004DE501 /* Raleway-SemiBold.ttf */; };
+		78D82D462513EDB4004DE501 /* TranscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D452513EDB4004DE501 /* TranscribeViewController.swift */; };
+		78D82D482513FA72004DE501 /* NewCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D472513FA72004DE501 /* NewCardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionViewController.swift; sourceTree = "<group>"; };
 		78D82D3F2512B964004DE501 /* SubscriptionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionModel.swift; sourceTree = "<group>"; };
 		78D82D412512C28E004DE501 /* SubscriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionTableViewCell.swift; sourceTree = "<group>"; };
+		78D82D43251374BC004DE501 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		78D82D452513EDB4004DE501 /* TranscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscribeViewController.swift; sourceTree = "<group>"; };
+		78D82D472513FA72004DE501 /* NewCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,8 @@
 				78D82D3525113A0D004DE501 /* CardViewController.swift */,
 				78D82D3B2512ABE9004DE501 /* SubscriptionsViewController.swift */,
 				78D82D3D2512AD6C004DE501 /* AddSubscriptionViewController.swift */,
+				78D82D452513EDB4004DE501 /* TranscribeViewController.swift */,
+				78D82D472513FA72004DE501 /* NewCardViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 			children = (
 				78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */,
 				78D82D2F2511280A004DE501 /* andale-mono.ttf */,
+				78D82D43251374BC004DE501 /* Raleway-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -297,6 +306,7 @@
 				784CC1AB250D5DF000A243DA /* LaunchScreen.storyboard in Resources */,
 				78D82D302511280A004DE501 /* andale-mono.ttf in Resources */,
 				784CC1A8250D5DF000A243DA /* Assets.xcassets in Resources */,
+				78D82D44251374BC004DE501 /* Raleway-SemiBold.ttf in Resources */,
 				784CC1A3250D5DED00A243DA /* Main.storyboard in Resources */,
 				78D82D2E251127FD004DE501 /* Raleway-Regular.ttf in Resources */,
 			);
@@ -323,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D82D482513FA72004DE501 /* NewCardViewController.swift in Sources */,
 				784CC1A6250D5DED00A243DA /* Subscribe.xcdatamodeld in Sources */,
+				78D82D462513EDB4004DE501 /* TranscribeViewController.swift in Sources */,
 				78D82D3625113A0D004DE501 /* CardViewController.swift in Sources */,
 				7849A053250D636000025EFD /* CardModel.swift in Sources */,
 				784CC19C250D5DED00A243DA /* AppDelegate.swift in Sources */,

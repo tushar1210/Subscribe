@@ -38,8 +38,9 @@ class CardView:UIView{
         self.generateGradient()
         self.setUpView()
         self.layer.cornerRadius = 10
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        self.addGestureRecognizer(tap)
         self.addSublayouts()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -104,7 +105,6 @@ class CardView:UIView{
         nameLabel.adjustsFontSizeToFitWidth = true
         addSubview(nameLabel)
         
-        
     }
 
     public func setLogo(logo: cardProviderImageEnum){
@@ -138,6 +138,10 @@ class CardView:UIView{
             }
         }
         cardNumberLabel.text = formattedString
+    }
+    
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        
     }
     
 }
