@@ -30,31 +30,26 @@ class CardView:UIView{
         case credit = "CREDIT"
     }
     
-    init(colors:[UIColor] = [UIColor.orange,UIColor.red], frame:CGRect = CGRect(x: 0, y: 0, width: 323, height: 170)) {
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    init(_ frame:CGRect = CGRect(x: 0, y: 0, width: 323, height: 170)) {
         super.init(frame:frame)
-        self.cardModel.colors = colors
         self.frame = frame
         self.cardModel.frame = frame
         self.generateGradient()
         self.setUpView()
         self.layer.cornerRadius = 10
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        self.addGestureRecognizer(tap)
         self.addSublayouts()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+
     
     private func generateGradient(){
         let gradient = CAGradientLayer()
         gradient.frame = bounds
-        var cgColors:[CGColor] = []
-        for color:UIColor in cardModel.colors!{
-            cgColors.append(color.cgColor)
-        }
-        gradient.colors = cgColors
+        gradient.colors = cardModel.allColors[Int.random(in: Range(uncheckedBounds: (0,cardModel.allColors.count)))]
         gradient.startPoint = CGPoint.zero
         gradient.endPoint = CGPoint(x: 1, y: 1)
         layer.insertSublayer(gradient, at: 0)
@@ -140,8 +135,6 @@ class CardView:UIView{
         cardNumberLabel.text = formattedString
     }
     
-    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
-        
-    }
+
     
 }
