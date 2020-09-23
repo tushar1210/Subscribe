@@ -37,13 +37,19 @@ class CardView:UIView{
         self.addSublayouts()
     }
     
-    private func generateGradient(){
+    func generateGradient(){
+        
         let gradient = CAGradientLayer()
         gradient.frame = bounds
         gradient.colors = cardModel.allColors[Int.random(in: Range(uncheckedBounds: (0,cardModel.allColors.count)))]
         gradient.startPoint = CGPoint.zero
         gradient.endPoint = CGPoint(x: 1, y: 1)
-        layer.insertSublayer(gradient, at: 0)
+        if let lowLayer = layer.sublayers?[0]{
+            layer.replaceSublayer(lowLayer, with: gradient)
+        }else{
+            layer.insertSublayer(gradient, at: 0)
+        }
+        
     }
     
     private func setUpView(){

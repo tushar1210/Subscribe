@@ -16,6 +16,7 @@ class NewCardViewController: UIViewController {
     @IBOutlet var cardNum: UITextField!
     @IBOutlet var vendor: UIButton!
     @IBOutlet var typeSegment: UISegmentedControl!
+    @IBOutlet var save: UIButton!
     
     var vendorPickerToolBar = UIToolbar()
     var vendorPicker  = UIPickerView()
@@ -25,8 +26,6 @@ class NewCardViewController: UIViewController {
     let vendorArray = ["Master Card", "Visa", "American Express", "Rupay"]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         shadowView.layer.shadowPath =
         UIBezierPath(roundedRect: card.bounds,cornerRadius: card.layer.cornerRadius).cgPath
         shadowView.layer.shadowColor = UIColor.gray.cgColor
@@ -38,6 +37,8 @@ class NewCardViewController: UIViewController {
         shadowView.addSubview(card)
         vendor.layer.cornerRadius = 8
         vendor.titleLabel?.adjustsFontSizeToFitWidth = true
+        save.layer.cornerRadius = 8
+        save.titleLabel?.adjustsFontSizeToFitWidth = true
         
         nameTF.delegate = self
         dateTF.delegate = self
@@ -46,6 +47,12 @@ class NewCardViewController: UIViewController {
         dateTF.keyboardType = .numberPad
         cardNum.keyboardType = .numberPad
         
+        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(Randombackgorund))
+        card.addGestureRecognizer(tap)
+    }
+    
+    @objc func Randombackgorund(){
+        card.generateGradient()
     }
     
     @IBAction func vendor(_ sender: Any) {
@@ -85,6 +92,11 @@ class NewCardViewController: UIViewController {
         }
         card.typeLabel.text = card.cardModel.type?.rawValue
     }
+    
+    @IBAction func save(_ sender: Any) {
+        
+    }
+    
 }
 
 extension NewCardViewController:UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate{
