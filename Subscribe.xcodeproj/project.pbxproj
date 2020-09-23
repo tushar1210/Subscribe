@@ -16,6 +16,10 @@
 		784CC1AB250D5DF000A243DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784CC1A9250D5DF000A243DA /* LaunchScreen.storyboard */; };
 		784CC1B6250D5DF000A243DA /* SubscribeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC1B5250D5DF000A243DA /* SubscribeTests.swift */; };
 		784CC1C1250D5DF000A243DA /* SubscribeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CC1C0250D5DF000A243DA /* SubscribeUITests.swift */; };
+		78B2E72D251BDFA3009CC564 /* Proxima Nova Alt Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78B2E729251BDFA2009CC564 /* Proxima Nova Alt Light.otf */; };
+		78B2E72E251BDFA3009CC564 /* Proxima Nova Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78B2E72A251BDFA2009CC564 /* Proxima Nova Thin.otf */; };
+		78B2E72F251BDFA3009CC564 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78B2E72B251BDFA3009CC564 /* ProximaNova-Regular.otf */; };
+		78B2E730251BDFA3009CC564 /* Proxima Nova Alt Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 78B2E72C251BDFA3009CC564 /* Proxima Nova Alt Thin.otf */; };
 		78D82D2B250FCDC4004DE501 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D82D2A250FCDC4004DE501 /* CardView.swift */; };
 		78D82D2E251127FD004DE501 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */; };
 		78D82D302511280A004DE501 /* andale-mono.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D82D2F2511280A004DE501 /* andale-mono.ttf */; };
@@ -63,6 +67,10 @@
 		784CC1BC250D5DF000A243DA /* SubscribeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubscribeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		784CC1C0250D5DF000A243DA /* SubscribeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeUITests.swift; sourceTree = "<group>"; };
 		784CC1C2250D5DF000A243DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B2E729251BDFA2009CC564 /* Proxima Nova Alt Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Light.otf"; sourceTree = "<group>"; };
+		78B2E72A251BDFA2009CC564 /* Proxima Nova Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Thin.otf"; sourceTree = "<group>"; };
+		78B2E72B251BDFA3009CC564 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		78B2E72C251BDFA3009CC564 /* Proxima Nova Alt Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Proxima Nova Alt Thin.otf"; sourceTree = "<group>"; };
 		78D82D2A250FCDC4004DE501 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		78D82D2F2511280A004DE501 /* andale-mono.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "andale-mono.ttf"; sourceTree = "<group>"; };
@@ -195,6 +203,10 @@
 				78D82D2D251127FD004DE501 /* Raleway-Regular.ttf */,
 				78D82D2F2511280A004DE501 /* andale-mono.ttf */,
 				78D82D43251374BC004DE501 /* Raleway-SemiBold.ttf */,
+				78B2E729251BDFA2009CC564 /* Proxima Nova Alt Light.otf */,
+				78B2E72C251BDFA3009CC564 /* Proxima Nova Alt Thin.otf */,
+				78B2E72A251BDFA2009CC564 /* Proxima Nova Thin.otf */,
+				78B2E72B251BDFA3009CC564 /* ProximaNova-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -305,6 +317,10 @@
 			files = (
 				784CC1AB250D5DF000A243DA /* LaunchScreen.storyboard in Resources */,
 				78D82D302511280A004DE501 /* andale-mono.ttf in Resources */,
+				78B2E72F251BDFA3009CC564 /* ProximaNova-Regular.otf in Resources */,
+				78B2E72D251BDFA3009CC564 /* Proxima Nova Alt Light.otf in Resources */,
+				78B2E730251BDFA3009CC564 /* Proxima Nova Alt Thin.otf in Resources */,
+				78B2E72E251BDFA3009CC564 /* Proxima Nova Thin.otf in Resources */,
 				784CC1A8250D5DF000A243DA /* Assets.xcassets in Resources */,
 				78D82D44251374BC004DE501 /* Raleway-SemiBold.ttf in Resources */,
 				784CC1A3250D5DED00A243DA /* Main.storyboard in Resources */,
@@ -521,6 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = Subscribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -539,6 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDDB7WX63J;
 				INFOPLIST_FILE = Subscribe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
